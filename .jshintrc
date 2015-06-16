@@ -1,0 +1,23 @@
+{
+	"bitwise": true,
+	"curly": true,
+	"eqeqeq": true,
+	"forin": true,
+	"freeze": true,
+	"latedef": true,
+	"maxdepth": 3,
+	"maxparams": 4,
+	"maxstatements": 5,
+	"nonew": true,
+	"strict": true,
+	"undef": true,
+	"unused": true,
+	"esnext": true,
+	"loopfunc": true,
+	"browser": true,
+	"devel": true,
+	"jasmine": true,
+	"jquery": true,
+	"mocha": true,
+	"node": true
+}

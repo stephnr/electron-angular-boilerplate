@@ -1,0 +1,42 @@
+{
+  "name": "Electron-Boilerplate",
+  "version": "1.0.0",
+  "description": "A simple electron app with CLI tasks for automatically building the app",
+  "main": "main.js",
+  "scripts": {
+    "preinstall": "make globals",
+    "start": "electron .",
+    "test": "node-inspector && electron --debug=5858 && ",
+    "prepublish": "make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Stephn-R/Electron-Boilerplate.git"
+  },
+  "keywords": [],
+  "author": "steprodriguez10@gmail.com",
+  "license": "GNU GPL v2 License",
+  "bugs": {
+    "url": "https://github.com/Stephn-R/Electron-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/Stephn-R/Electron-Boilerplate",
+  "devDependencies": {
+    "del": "^1.2.0",
+    "electron-packager": "^4.1.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-babel": "^5.1.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.1",
+    "gulp-shell": "^0.4.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.5"
+  },
+  "dependencies": {
+    "electron-prebuilt": "^0.28.1",
+    "lodash": "^3.9.3"
+  }
+}
