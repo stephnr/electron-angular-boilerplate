@@ -1,2 +1,2 @@
-# League_Companion
-A Mac/Windows application built in Electron as a companion application to League of Legends
+# Electron-Boilerplate
+A template for Electron projects to build/publish Mac/Windows/Linux compatible applications
