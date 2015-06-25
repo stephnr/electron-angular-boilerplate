@@ -6,8 +6,6 @@
 	"freeze": true,
 	"latedef": true,
 	"maxdepth": 3,
-	"maxparams": 4,
-	"maxstatements": 5,
 	"nonew": true,
 	"strict": true,
 	"undef": true,

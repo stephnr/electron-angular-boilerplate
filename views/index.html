@@ -7,5 +7,16 @@
     <h1>Hello World!</h1>
     We are using io.js <script>document.write(process.version)</script>
     and Electron <script>document.write(process.versions['electron'])</script>.
+
+    <script>
+      // REQUIRED ##########################################################################
+      (function() {
+        var b = document.createElement('script');
+        b.setAttribute('type', 'text/javascript');
+        b.setAttribute('src', require('path').join(__dirname, 'utils', 'boilerplate.js'));
+        document.body.appendChild(b);
+      })();
+      // ###################################################################################
+    </script>
   </body>
 </html>

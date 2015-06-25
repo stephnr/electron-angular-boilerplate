@@ -2,24 +2,24 @@
 
 // Non Gulp npm modules
 var del = require('del');
- 
+
 // Gulp Modules
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var plugins = require('gulp-load-plugins')();
- 
+
 var sassRoot = 'public/scss';
 var cssRoot = 'public/css';
 var jsRoot = 'public/js';
 var jsnextRoot = 'public/js-next';
- 
+
 function handleError(err) {
   console.log(err.toString());
 }
 
-// ##########################################################################
-// ##########################################################################
- 
+// ############################################################################################
+// ############################################################################################
+
 gulp.task('clean:styles', function(cb) {
   del([
     '**/.sass-cache/**',
@@ -45,21 +45,21 @@ gulp.task('build-sass', function() {
     .pipe(gulp.dest(cssRoot));
 });
 
-// ##########################################################################
-// ##########################################################################
+// ############################################################################################
+// ############################################################################################
 
 gulp.task('watch-js-next', function() {
   plugins.notify('JS-Next Stream is Active...');
   gulp.watch(jsnextRoot+'/**/*.js', ['build-js-next']);
 });
-  
+
 gulp.task('watch-sass', function() {
   plugins.notify('Sass Stream is Active...');
   gulp.watch(sassRoot+'/**/*.scss', ['build-sass']);
 });
 
-// ##########################################################################
-// ##########################################################################
+// ############################################################################################
+// ############################################################################################
 
 gulp.task('default', function() {
   gutil.log('Default has not been defined...');
