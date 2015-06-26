@@ -1,7 +1,6 @@
 'use strict';
 
 var _ = require('lodash');
-var fs = require('fs');
 var app = require('app');
 var path = require('path');
 var BrowserWindow = require('browser-window');
@@ -13,11 +12,19 @@ var BrowserWindow = require('browser-window');
 require('crash-reporter').start();
 
 var mainWindow = null;
-var options = JSON.parse(fs.readFileSync('config.json', 'utf8'));
+var options = {
+	"debug": true,
+	"version": "1.0.0",
+	"views_dir": "views",
+	"root_view": "index.html"
+};
 
 options = _.extend({
 	// ADDITIONAL CUSTOM SETTINGS
 }, options);
+
+// ############################################################################################
+// ############################################################################################
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function() {
@@ -27,9 +34,9 @@ app.on('window-all-closed', function() {
 app.on('ready', function() {
   mainWindow = new BrowserWindow({width: 800, height: 600});
   mainWindow.loadUrl(path.join('file://', __dirname, options.views_dir, options.root_view));
-  // mainWindow.openDevTools();
-
-  mainWindow.on('closed', function() {
-    mainWindow = null;
-  });
+  if(options.debug) { mainWindow.openDevTools(); }
+  mainWindow.on('closed', function() { mainWindow = null; });
 });
+
+// ############################################################################################
+// ############################################################################################

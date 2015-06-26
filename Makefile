@@ -1,8 +1,8 @@
 APP_NAME=app
-ELECTRON_VERSION=0.28.1
+ELECTRON_VERSION=0.28.3
 OUTPUT_DIR=dist
 
-apps: windows-app windows-app-64 mac-app mac-app-64 linux-app linux-app-64
+apps: windows windows-64 mac-64 linux linux-64
 
 globals:
 	npm install -g electron-prebuilt
@@ -12,13 +12,18 @@ globals:
 
 clean-apps:
 	rm -rf dist && mkdir distgit
-windows-app:
+windows:
+	rm -rf ${OUTPUT_DIR}/win32
 	electron-packager . ${APP_NAME} --platform=win32 --arch=ia32 --version=${ELECTRON_VERSION} --out=${OUTPUT_DIR}/win32
-windows-app-64:
+windows-64:
+	rm -rf ${OUTPUT_DIR}/win64
 	electron-packager . ${APP_NAME} --platform=win32 --arch=x64 --version=${ELECTRON_VERSION} --out=${OUTPUT_DIR}/win64
-mac-app:
+mac-64:
+	rm -rf ${OUTPUT_DIR}/mac64
 	electron-packager . ${APP_NAME} --platform=darwin --arch=x64 --version=${ELECTRON_VERSION} --out=${OUTPUT_DIR}/mac64
-linux-app:
+linux:
+	rm -rf ${OUTPUT_DIR}/linux32
 	electron-packager . ${APP_NAME} --platform=linux --arch=ia32 --version=${ELECTRON_VERSION} --out=${OUTPUT_DIR}/linux32
-linux-app-64:
+linux-64:
+	rm -rf ${OUTPUT_DIR}/linux64
 	electron-packager . ${APP_NAME} --platform=linux --arch=x64 --version=${ELECTRON_VERSION} --out=${OUTPUT_DIR}/linux64

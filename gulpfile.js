@@ -61,8 +61,8 @@ gulp.task('watch-sass', function() {
 // ############################################################################################
 // ############################################################################################
 
-gulp.task('default', function() {
-  gutil.log('Default has not been defined...');
+gulp.task('default', ['build-sass', 'build-js-next'], function() {
+  gutil.log('Transposing Sass and ES6 code...');
 });
 
 gulp.task('clean', ['clean:styles']);
