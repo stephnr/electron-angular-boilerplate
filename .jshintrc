@@ -17,5 +17,6 @@
 	"jasmine": true,
 	"jquery": true,
 	"mocha": true,
-	"node": true
+	"node": true,
+	"predef": [ "import_stylesheet", "System" ]
 }

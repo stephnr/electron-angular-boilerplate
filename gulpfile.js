@@ -26,32 +26,21 @@ gulp.task('clean:styles', function(cb) {
   ], cb);
 });
 
-gulp.task('build-js-next', function() {
-  return gulp.src(jsnextRoot+'/**/*.js')
-    .pipe(plugins.plumber())
-    .pipe(plugins.notify('Compiling <%= file.relative %> into ES5 compatible code...'))
-    .pipe(plugins.babel()).on('error', handleError)
-    .pipe(gulp.dest(jsRoot));
-});
-
 gulp.task('build-sass', function() {
   return gulp.src(sassRoot+'/*.scss')
     .pipe(plugins.plumber())
     .pipe(plugins.notify('Compile Sass File: <%= file.relative %>...'))
+    .pipe(plugins.sourcemaps.init())
     .pipe(plugins.autoprefixer('last 10 versions'))
     .pipe(plugins.sass({
       style: 'compressed'
     })).on('error', handleError)
+    .pipe(plugins.sourcemaps.write())
     .pipe(gulp.dest(cssRoot));
 });
 
 // ############################################################################################
 // ############################################################################################
-
-gulp.task('watch-js-next', function() {
-  plugins.notify('JS-Next Stream is Active...');
-  gulp.watch(jsnextRoot+'/**/*.js', ['build-js-next']);
-});
 
 gulp.task('watch-sass', function() {
   plugins.notify('Sass Stream is Active...');
@@ -61,8 +50,8 @@ gulp.task('watch-sass', function() {
 // ############################################################################################
 // ############################################################################################
 
-gulp.task('default', ['build-sass', 'build-js-next'], function() {
-  gutil.log('Transposing Sass and ES6 code...');
+gulp.task('default', ['build-sass'], function() {
+  gutil.log('Transposing Sass...');
 });
 
 gulp.task('clean', ['clean:styles']);

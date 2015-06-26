@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello World!</title>
+    <title>Electron Boilerplate: Hello World!</title>
+    <!-- REQUIRED CSS -->
+    <script src="../jspm_packages/system.js"></script>
+    <script src="../config.js"></script>
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="../public/vendor/skeleton/css/skeleton.css">
+    <!-- VENDOR JS -->
+    <script src="../public/vendor/jquery/dist/jquery.min.js"></script>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="../public/css/style.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using io.js <script>document.write(process.version)</script>
-    and Electron <script>document.write(process.versions['electron'])</script>.
+    
+    <h1>Electron Boilerplate is alive!</h1>
 
-    <script>
-      // REQUIRED ##########################################################################
-      (function() {
-        var b = document.createElement('script');
-        b.setAttribute('type', 'text/javascript');
-        b.setAttribute('src', require('path').join(__dirname, 'utils', 'boilerplate.js'));
-        document.body.appendChild(b);
-      })();
-      // ###################################################################################
-    </script>
   </body>
 </html>
