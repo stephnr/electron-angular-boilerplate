@@ -1,0 +1,25 @@
+{
+  "name": "Electron-Boilerplate",
+  "version": "1.1.1",
+  "homepage": "https://github.com/Stephn-R/Electron-Boilerplate",
+  "authors": [
+    "Stephen Rodriguez <steprodriguez10@gmail.com>"
+  ],
+  "description": "A template for Electron projects to build/publish Mac/Windows/Linux compatible applications",
+  "moduleType": [
+    "node"
+  ],
+  "license": "GNU GPL v2",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

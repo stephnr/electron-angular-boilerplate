@@ -55,4 +55,4 @@ gulp.task('default', ['build-sass'], function() {
 });
 
 gulp.task('clean', ['clean:styles']);
-gulp.task('watch', ['watch-sass', 'watch-js-next']);
+gulp.task('watch', ['watch-sass']);

@@ -8,10 +8,11 @@ globals:
 	npm install -g electron-prebuilt
 	npm install -g electron-packager
 	npm install -g node-inspector
+	npm install -g jspm
 	npm install -g gulp
 
 clean-apps:
-	rm -rf dist && mkdir distgit
+	rm -rf dist && mkdir dist
 windows:
 	rm -rf ${OUTPUT_DIR}/win32
 	electron-packager . ${APP_NAME} --platform=win32 --arch=ia32 --version=${ELECTRON_VERSION} --out=${OUTPUT_DIR}/win32
