@@ -8,6 +8,7 @@ globals:
 	npm install -g electron-prebuilt
 	npm install -g electron-packager
 	npm install -g node-inspector
+	npm install -g bower
 	npm install -g jspm
 	npm install -g gulp
 
