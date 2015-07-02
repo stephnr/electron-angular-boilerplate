@@ -1,17 +1,13 @@
 'use strict';
 
-// Non Gulp npm modules
-var del = require('del');
+import del from 'del';
+import gulp from 'gulp';
+import gutil from 'gulp-util';
+import gulpLoadPlugins from 'gulp-load-plugins';
 
-// Gulp Modules
-var gulp = require('gulp');
-var gutil = require('gulp-util');
-var plugins = require('gulp-load-plugins')();
-
-var sassRoot = 'public/scss';
-var cssRoot = 'public/css';
-var jsRoot = 'public/js';
-var jsnextRoot = 'public/js-next';
+const plugins = gulpLoadPlugins();
+const sassRoot = 'public/scss';
+const cssRoot = 'public/css';
 
 function handleError(err) {
   console.log(err.toString());
@@ -20,13 +16,13 @@ function handleError(err) {
 // ############################################################################################
 // ############################################################################################
 
-gulp.task('clean:styles', function(cb) {
+gulp.task('clean:styles', (cb) => {
   del([
     '**/.sass-cache/**',
   ], cb);
 });
 
-gulp.task('build-sass', function() {
+gulp.task('build-sass', () => {
   return gulp.src(sassRoot+'/*.scss')
     .pipe(plugins.plumber())
     .pipe(plugins.notify('Compile Sass File: <%= file.relative %>...'))
@@ -42,7 +38,7 @@ gulp.task('build-sass', function() {
 // ############################################################################################
 // ############################################################################################
 
-gulp.task('watch-sass', function() {
+gulp.task('watch-sass', () => {
   plugins.notify('Sass Stream is Active...');
   gulp.watch(sassRoot+'/**/*.scss', ['build-sass']);
 });
@@ -50,7 +46,7 @@ gulp.task('watch-sass', function() {
 // ############################################################################################
 // ############################################################################################
 
-gulp.task('default', ['build-sass'], function() {
+gulp.task('default', ['build-sass'], () => {
   gutil.log('Transposing Sass...');
 });
 

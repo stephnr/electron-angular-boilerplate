@@ -1,6 +1,8 @@
 # Electron-Boilerplate
 A template for Electron projects to build/publish Mac/Windows/Linux compatible applications
 
+[![Build Status](https://travis-ci.org/Stephn-R/Electron-Boilerplate.svg)](https://travis-ci.org/Stephn-R/Electron-Boilerplate)
+
 ### Installation:
 
 For development, run:

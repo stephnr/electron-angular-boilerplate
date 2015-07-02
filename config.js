@@ -1,5 +1,5 @@
 System.config({
-  "baseURL": __dirname + "/",
+  "baseURL": "c:\\Users\\strodrig\\AppData\\Roaming\\npm\\node_modules\\jspm\\lib\\config/",
   "transpiler": "babel",
   "babelOptions": {
     "optional": [
