@@ -5,9 +5,14 @@ import gulp from 'gulp';
 import gutil from 'gulp-util';
 import gulpLoadPlugins from 'gulp-load-plugins';
 
+let wiredep = require('wiredep').stream;
+
 const plugins = gulpLoadPlugins();
-const sassRoot = 'public/scss';
-const cssRoot = 'public/css';
+const sassRoot = 'src/scss';
+const cssRoot = 'dist/css';
+
+const views = 'src/views/**/*.htm';
+const viewsRoot = 'views/';
 
 function handleError(err) {
   console.log(err.toString());
@@ -20,6 +25,15 @@ gulp.task('clean:styles', (cb) => {
   del([
     '**/.sass-cache/**',
   ], cb);
+});
+
+gulp.task('inject-dependencies', function() {
+  return gulp.src(views)
+    .pipe(wiredep())
+    .pipe(plugins.rename(function(path) {
+      path.extname = '.html';
+    }))
+    .pipe(gulp.dest(viewsRoot));
 });
 
 gulp.task('build-sass', () => {
@@ -46,7 +60,7 @@ gulp.task('watch-sass', () => {
 // ############################################################################################
 // ############################################################################################
 
-gulp.task('default', ['build-sass'], () => {
+gulp.task('default', ['build-sass', 'inject-dependencies'], () => {
   gutil.log('Transposing Sass...');
 });
 

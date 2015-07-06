@@ -3,7 +3,7 @@
 let x = 2;
 let y = 2;
 
-class SampleApp() {
+class SampleApp {
   constructor() {
     console.log('Hello World');
   }

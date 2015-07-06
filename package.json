@@ -16,7 +16,7 @@
   },
   "keywords": [],
   "author": "steprodriguez10@gmail.com",
-  "license": "GNU GPL v2 License",
+  "license": "GPL-2.0",
   "bugs": {
     "url": "https://github.com/Stephn-R/Electron-Boilerplate/issues"
   },
@@ -36,7 +36,8 @@
     "gulp-sass": "^2.0.1",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-util": "^3.0.5",
-    "lodash": "^3.9.3"
+    "lodash": "^3.9.3",
+    "wiredep": "^2.2.2"
   },
   "dependencies": {
     "jquery": "^2.1.4"

@@ -20,6 +20,7 @@
     "tests"
   ],
   "dependencies": {
-    "angularjs": "~1.4.1"
+    "angularjs": "~1.4.1",
+    "skeleton": "~2.0.4"
   }
 }
