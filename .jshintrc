@@ -4,7 +4,6 @@
 	"eqeqeq": true,
 	"forin": true,
 	"freeze": true,
-	"latedef": true,
 	"maxdepth": 3,
 	"nonew": true,
 	"strict": true,
@@ -18,5 +17,5 @@
 	"jquery": true,
 	"mocha": true,
 	"node": true,
-	"predef": [ "import_stylesheet", "System" ]
+	"predef": [ "import_stylesheet", "System", "angular"]
 }

@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="Home">
   <head>
     <title>Electron Boilerplate: Hello World!</title>
-    <!-- VENDOR CSS -->
-    <link rel="stylesheet" href="../dist/vendor/skeleton/css/normalize.css">
-    <link rel="stylesheet" href="../dist/vendor/skeleton/css/skeleton.css">
-    <!-- VENDOR JS -->
-    <script src="../dist/vendor/angularjs/angular.min.js"></script>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../dist/vendor/skeleton/css/skeleton.css" />
+    <!-- endbower -->
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="../dist/css/style.css">
   </head>
-  <body>
+  <body ng-controller="HomeController">
 
     <h1>Electron Boilerplate is alive!</h1>
 
@@ -18,7 +16,9 @@
     <script src="../jspm_packages/system.js"></script>
     <script src="../config.js"></script>
     <!-- bower:js -->
+    <script src="../dist/vendor/angularjs/angular.js"></script>
     <!-- endbower -->
+    <script src="../dist/app/home/home.js"></script>
     <script src="../dist/js/sample.js"></script>
   </body>
 </html>

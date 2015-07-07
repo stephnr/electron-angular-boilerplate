@@ -11,7 +11,7 @@ const plugins = gulpLoadPlugins();
 const sassRoot = 'src/scss';
 const cssRoot = 'dist/css';
 
-const views = 'src/views/**/*.htm';
+const views = 'views/**/*.html';
 const viewsRoot = 'views/';
 
 function handleError(err) {
