@@ -8,7 +8,7 @@
     "start": "electron .",
     "postinstall": "bower install && jspm install",
     "debug": "node-inspector && electron --debug=5858 && ",
-    "test": "echo \"No testing specified...\""
+    "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
@@ -36,7 +36,13 @@
     "gulp-sass": "^2.0.1",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-util": "^3.0.5",
+    "jest-cli": "^0.4.15",
+    "karma": "^0.12.37",
+    "karma-coverage": "^0.4.2",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.0",
     "lodash": "^3.9.3",
+    "phantomjs": "^1.9.17",
     "wiredep": "^2.2.2"
   },
   "dependencies": {
@@ -50,5 +56,9 @@
       "babel-runtime": "npm:babel-runtime@^5.1.13",
       "core-js": "npm:core-js@^0.9.4"
     }
+  },
+  "jest": {
+    "collectCoverage": true,
+    "testFileExtensions": [ ".jest.js" ]
   }
 }

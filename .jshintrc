@@ -1,6 +1,8 @@
 {
+	"passfail": false,
 	"bitwise": true,
 	"curly": true,
+	"devel": true,
 	"eqeqeq": true,
 	"forin": true,
 	"freeze": true,
@@ -17,5 +19,5 @@
 	"jquery": true,
 	"mocha": true,
 	"node": true,
-	"predef": [ "import_stylesheet", "System", "angular"]
+	"predef": [ "import_stylesheet", "System", "angular", "jest"]
 }

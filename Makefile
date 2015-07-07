@@ -5,12 +5,17 @@ OUTPUT_DIR=build
 apps: windows windows-64 mac-64 linux linux-64
 
 globals:
-	npm install -g electron-prebuilt
-	npm install -g electron-packager
-	npm install -g node-inspector
-	npm install -g bower
-	npm install -g jspm
-	npm install -g gulp
+	DEPENDENCIES = ( "electron-prebuilt:electron"
+									 "electron-packager:electron-packager"
+									 "node-inspector:node-inspector"
+									 "bower:bower"
+									 "jspm:jspm"
+									 "gulp:gulp"
+									 "jest-cli:jest" )
+	for DEP in ${DEPENDENCIES[@]}; do
+		PKG="${DEP%%:*}"
+		CMD="${DEP##*:}"
+		type $CMD >/dev/null 2>&1 || npm install -g $PKG
 
 clean-apps:
 	rm -rf dist && mkdir dist
