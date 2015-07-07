@@ -1,6 +1,6 @@
 {
   "name": "Electron-Boilerplate",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "A simple electron app with CLI tasks for automatically building the app",
   "main": "main.js",
   "scripts": {
