@@ -21,6 +21,7 @@
   ],
   "dependencies": {
     "angularjs": "~1.4.1",
-    "skeleton": "~2.0.4"
+    "skeleton": "~2.0.4",
+    "angular-mocks": "~1.4.2"
   }
 }
