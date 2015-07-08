@@ -1,6 +1,5 @@
 language: node_js
 node_js:
   - "0.10"
-install:
-  - sudo ./scripts/load_globals.sh
-  - npm install
+before_install:
+    - ./scripts/load_globals.sh
