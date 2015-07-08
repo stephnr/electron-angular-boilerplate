@@ -2,6 +2,7 @@
   "name": "Electron-Boilerplate",
   "version": "1.2.0",
   "description": "A simple electron app with CLI tasks for automatically building the app",
+  "engines": { "node": "<0.12" },
   "main": "main.js",
   "scripts": {
     "start": "electron .",
