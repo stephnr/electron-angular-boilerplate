@@ -1,7 +1,7 @@
 {
-  "name": "Electron-Boilerplate",
+  "name": "electron-angular-boilerplate",
   "version": "1.3.0",
-  "description": "A simple electron app with CLI tasks for automatically building the app",
+  "description": "A basic electron app using AngularJS and Skeleton CSS with ES6 support",
   "engines": {
     "node": "<0.12"
   },
