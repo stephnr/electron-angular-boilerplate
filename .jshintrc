@@ -19,5 +19,5 @@
 	"jquery": true,
 	"mocha": true,
 	"node": true,
-	"predef": [ "import_stylesheet", "System", "angular", "jest"]
+	"predef": [ "import_stylesheet", "System", "angular", "jest", "inject"]
 }

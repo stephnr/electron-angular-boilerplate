@@ -7,7 +7,8 @@
     "start": "electron .",
     "postinstall": "bower install && jspm install",
     "debug": "node-inspector && electron --debug=5858 && ",
-    "test": "jest --verbose"
+    "test": "jest --verbose && karma start",
+    "test-angularjs": "karma start --auto-watch"
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,7 @@
     "karma": "^0.12.37",
     "karma-coverage": "^0.4.2",
     "karma-jasmine": "^0.3.6",
+    "karma-mocha-reporter": "^1.0.2",
     "karma-phantomjs-launcher": "^0.2.0",
     "lodash": "^3.9.3",
     "phantomjs": "^1.9.17",
@@ -58,6 +60,8 @@
   },
   "jest": {
     "collectCoverage": true,
-    "testFileExtensions": [ ".jest.js" ]
+    "testFileExtensions": [
+      ".jest.js"
+    ]
   }
 }
