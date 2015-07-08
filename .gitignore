@@ -1,5 +1,6 @@
 build/
 coverage/
+karma-coverage/
 npm-debug.log
 node_modules/
 jspm_packages/w
