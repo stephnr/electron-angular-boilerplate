@@ -4,7 +4,6 @@
   "description": "A simple electron app with CLI tasks for automatically building the app",
   "main": "main.js",
   "scripts": {
-    "preinstall": "make globals",
     "start": "electron .",
     "postinstall": "bower install && jspm install",
     "debug": "node-inspector && electron --debug=5858 && ",

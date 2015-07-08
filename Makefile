@@ -4,21 +4,8 @@ OUTPUT_DIR=build
 
 apps: windows windows-64 mac-64 linux linux-64
 
-globals:
-	DEPENDENCIES = ( "electron-prebuilt:electron"
-									 "electron-packager:electron-packager"
-									 "node-inspector:node-inspector"
-									 "bower:bower"
-									 "jspm:jspm"
-									 "gulp:gulp"
-									 "jest-cli:jest" )
-	for DEP in ${DEPENDENCIES[@]}; do
-		PKG="${DEP%%:*}"
-		CMD="${DEP##*:}"
-		type $CMD >/dev/null 2>&1 || npm install -g $PKG
-
 clean-apps:
-	rm -rf dist && mkdir dist
+	rm -rf $OUTPUT_DIR && mkdir $OUTPUT_DIR
 windows:
 	rm -rf ${OUTPUT_DIR}/win32
 	electron-packager . ${APP_NAME} --platform=win32 --arch=ia32 --version=${ELECTRON_VERSION} --out=${OUTPUT_DIR}/win32

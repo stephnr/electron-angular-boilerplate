@@ -19,6 +19,7 @@ A template for Electron projects to build/publish Mac/Windows/Linux compatible a
 For development, run:
 
 ```shell
+./scripts/load_globals.sh
 npm install
 npm start
 ```
