@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/Stephn-R/Electron-Boilerplate.git"
   },
-  "keywords": [],
+  "keywords": ["electron", "angular", "boilerplate", "desktop", "applications", "web"],
   "author": "steprodriguez10@gmail.com",
   "license": "MIT",
   "bugs": {
