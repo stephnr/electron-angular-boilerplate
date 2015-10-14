@@ -1,6 +1,6 @@
 {
   "name": "electron-angular-boilerplate",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "A basic electron app using AngularJS and Skeleton CSS with ES6 support",
   "engines": {
     "node": "<0.12"
@@ -17,7 +17,14 @@
     "type": "git",
     "url": "https://github.com/Stephn-R/Electron-Boilerplate.git"
   },
-  "keywords": ["electron", "angular", "boilerplate", "desktop", "applications", "web"],
+  "keywords": [
+    "electron",
+    "angular",
+    "boilerplate",
+    "desktop",
+    "applications",
+    "web"
+  ],
   "author": "steprodriguez10@gmail.com",
   "license": "MIT",
   "bugs": {
