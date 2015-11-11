@@ -72,6 +72,14 @@ Since the app was built using Node.js, you only need to run the following comman
 npm start
 ```
 
+npm start will run the latest build and then launch the application.
+
+In order to only build the latest code run:
+
+```shell
+gulp
+```
+
 As for building the final Desktop Application. You can use any of the following make commands to build them:
 
 - Mac: `make mac-64`
