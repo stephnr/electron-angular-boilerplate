@@ -16,12 +16,23 @@ A template for Electron projects to build/publish Mac/Windows/Linux compatible a
 
 ### <a name="install"></a> Installation:
 
+The application runs using Node 0.12. I recommend using [nvm](https://github.com/creationix/nvm) to manage your node versions. In addition, node-sass is required globally.
+
 For development, run:
 
 ```shell
 ./scripts/load_globals.sh
 npm install
 npm start
+```
+
+#### Known Bugs:
+
+Node-sass may fail the `npm start` command. I recommend running the following command to fix this:
+
+```
+npm i -g node-sass
+npm rebuild node-sass
 ```
 
 As for preparing the Windows/Mac/Linux apps for distribution. You will first need to run the ```npm install```. Afterwards, run the following to build all the apps for all architectures and distributions:
