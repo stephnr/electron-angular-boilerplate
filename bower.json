@@ -20,8 +20,8 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.4.1",
-    "skeleton": "~2.0.4",
-    "angular-mocks": "~1.4.2"
+    "angular": "1.4.9",
+    "skeleton": "2.0.4",
+    "angular-mocks": "1.4.9"
   }
 }
