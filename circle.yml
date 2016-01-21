@@ -1,7 +1,9 @@
 machine:
   node:
     version: 0.12
+checkout:
+  post:
+    - ./load_globals.sh
 test:
   override:
-    - ./load_globals.sh
     - npm test
