@@ -1,7 +1,7 @@
 # Electron-Boilerplate
 A template for Electron projects to build/publish Mac/Windows/Linux compatible applications
 
-[![Build Status](https://travis-ci.org/Stephn-R/Electron-Angular-Boilerplate.svg)](https://travis-ci.org/Stephn-R/Electron-Anguler-Boilerplate) [![Dependency Status](https://david-dm.org/Stephn-R/Electron-Angular-Boilerplate.svg)](https://david-dm.org/Stephn-R/Electron-Angular-Boilerplate) [![devDependency Status](https://david-dm.org/Stephn-R/Electron-Angular-Boilerplate/dev-status.svg)](https://david-dm.org/Stephn-R/Electron-Angular-Boilerplate#info=devDependencies)
+[![Circle CI](https://circleci.com/gh/Stephn-R/electron-angular-boilerplate.svg?style=svg&circle-token=6a9c22099623944c66e2c82e5a11fdd0eb9c2bdf)](https://circleci.com/gh/Stephn-R/electron-angular-boilerplate) [![Dependency Status](https://david-dm.org/Stephn-R/Electron-Angular-Boilerplate.svg)](https://david-dm.org/Stephn-R/Electron-Angular-Boilerplate) [![devDependency Status](https://david-dm.org/Stephn-R/Electron-Angular-Boilerplate/dev-status.svg)](https://david-dm.org/Stephn-R/Electron-Angular-Boilerplate#info=devDependencies)
 
 ### Table of Contents:
 ---
