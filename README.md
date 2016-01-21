@@ -22,7 +22,7 @@ For development, run:
 
 ```shell
 ./scripts/load_globals.sh
-npm install
+sudo npm install
 npm start
 ```
 
