@@ -3,4 +3,5 @@ machine:
     version: 0.12
 test:
   override:
+    - npm rebuild
     - npm test
