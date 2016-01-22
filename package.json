@@ -7,7 +7,6 @@
   },
   "main": "main.js",
   "scripts": {
-    "preinstall": "./scripts/load_globals.sh",
     "start": "gulp && electron .",
     "postinstall": "./node_modules/bower/bin/bower install && ./node_modules/jspm/jspm.js install",
     "debug": "node-inspector && electron --debug=5858 && ",

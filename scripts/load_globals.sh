@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-DEPENDENCIES=( "electron-prebuilt:electron" "electron-packager:electron-packager" "node-inspector:node-inspector" "jest-cli:jest" )
+DEPENDENCIES=( "electron-prebuilt:electron" "electron-packager:electron-packager" "node-inspector:node-inspector" )
 for DEP in ${DEPENDENCIES[@]}; do
   PKG="${DEP%%:*}"
   CMD="${DEP##*:}"
