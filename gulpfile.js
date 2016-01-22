@@ -1,9 +1,9 @@
 'use strict';
 
-import del from 'del';
-import gulp from 'gulp';
-import gutil from 'gulp-util';
-import gulpLoadPlugins from 'gulp-load-plugins';
+const del = require('del');
+const gulp = require('gulp');
+const gutil = require('gulp-util');
+const gulpLoadPlugins = require('gulp-load-plugins');
 
 let wiredep = require('wiredep').stream;
 
