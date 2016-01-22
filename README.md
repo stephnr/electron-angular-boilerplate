@@ -16,13 +16,13 @@ A template for Electron projects to build/publish Mac/Windows/Linux compatible a
 
 ### <a name="install"></a> Installation:
 
-The application runs using Node 0.12. I recommend using [nvm](https://github.com/creationix/nvm) to manage your node versions. In addition, node-sass is required globally.
+The application runs using Node 4.2.4. I recommend using [nvm](https://github.com/creationix/nvm) to manage your node versions. In addition, node-sass is required globally.
 
 For development, run:
 
 ```shell
 ./scripts/load_globals.sh
-sudo npm install
+sudo npm install --python=python2.7
 npm start
 ```
 
