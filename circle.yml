@@ -3,7 +3,7 @@ machine:
     version: 0.12
 checkout:
   post:
-    - ./load_globals.sh
+    - ./scripts/load_globals.sh
 test:
   override:
     - npm test
