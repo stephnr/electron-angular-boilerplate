@@ -1,20 +1,18 @@
 System.config({
-  "baseURL": "c:\\Users\\strodrig\\AppData\\Roaming\\npm\\node_modules\\jspm\\lib\\config/",
-  "transpiler": "babel",
-  "babelOptions": {
+  baseURL: "c:\\Users\\strodrig\\AppData\\Roaming\\npm\\node_modules\\jspm\\lib\\config/",
+  defaultJSExtensions: true,
+  transpiler: "babel",
+  babelOptions: {
     "optional": [
       "runtime"
     ]
   },
-  "paths": {
-    "*": "*.js",
-    "github:*": "jspm_packages/github/*.js",
-    "npm:*": "jspm_packages/npm/*.js"
-  }
-});
+  paths: {
+    "github:*": "jspm_packages/github/*",
+    "npm:*": "jspm_packages/npm/*"
+  },
 
-System.config({
-  "map": {
+  map: {
     "babel": "npm:babel-core@5.6.11",
     "babel-runtime": "npm:babel-runtime@5.6.11",
     "core-js": "npm:core-js@0.9.18",
@@ -31,4 +29,3 @@ System.config({
     }
   }
 });
-

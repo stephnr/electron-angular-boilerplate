@@ -64,7 +64,6 @@
     "jquery": "^2.1.4"
   },
   "jspm": {
-    "directories": {},
     "dependencies": {},
     "devDependencies": {
       "babel": "npm:babel-core@^5.1.13",

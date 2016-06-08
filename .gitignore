@@ -3,5 +3,5 @@ coverage/
 karma-coverage/
 npm-debug.log
 node_modules/
-jspm_packages/w
+jspm_packages/
 dist/vendor/
