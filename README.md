@@ -13,6 +13,7 @@ A template for Electron projects to build/publish Mac/Windows/Linux compatible a
 5. [Building the Desktop Application](#build-app)
 6. [Testing](#testing)
 7. [FAQ](#faq)
+8. [Contributing](#contributing)
 
 ### <a name="install"></a> Installation:
 
@@ -110,3 +111,7 @@ Tests are broken between two layers. All ES6 Modules/JS code should be tested us
 1. **Where can I write my tests?**
 
     All the ES6/Module tests are written in Jest. You can refer to the ```__tests__``` folder for that. All test files for Jest should match against this file extension pattern ```*.jest.js```. Alternatively, all AngularJS tests should be written using the following file extension pattern ```*.spec.js```. These tests should be written within the b`__tests__/app/` folder.
+
+### <a name="contributing"></a> Contributing
+
+Please see [CONTRIBUTING.md](/CONTRIBUTING.md) for full details on contributing.
