@@ -1,15 +1,23 @@
 'use strict';
 
 var _ = require('lodash');
-var app = require('app');
+const {
+	app,
+	BrowserWindow,
+	crashReporter
+} = require('electron')
 var path = require('path');
-var BrowserWindow = require('browser-window');
 
 // ####################################################
 // ####################################################
 
 // Report crashes to our server.
-require('crash-reporter').start();
+crashReporter.start({
+  productName: 'YourName',
+  companyName: 'YourCompany',
+  submitURL: 'https://your-domain.com/url-to-submit',
+  autoSubmit: true
+})
 
 var mainWindow = null;
 var options = {
@@ -33,7 +41,7 @@ app.on('window-all-closed', function() {
 
 app.on('ready', function() {
   mainWindow = new BrowserWindow({width: 800, height: 600});
-  mainWindow.loadUrl(path.join('file://', __dirname, options.views_dir, options.root_view));
+  mainWindow.loadURL(path.join('file://', __dirname, options.views_dir, options.root_view));
   if(options.debug) { mainWindow.openDevTools(); }
   mainWindow.on('closed', function() { mainWindow = null; });
 });
