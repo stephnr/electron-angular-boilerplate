@@ -24,6 +24,7 @@ For development, run:
 ```shell
 ./scripts/load_globals.sh
 sudo npm install --python=python2.7
+bower install
 npm start
 ```
 
